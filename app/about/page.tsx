@@ -5,15 +5,15 @@ import { Github, Mail, Instagram, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const techStack = [
+  { name: 'Golang', color: 'bg-blue-500' },
+  { name: 'PHP', color: 'bg-purple-500' },
   { name: 'JavaScript', color: 'bg-yellow-400' },
-  { name: 'TypeScript', color: 'bg-blue-600' },
-  { name: 'React', color: 'bg-blue-500' },
-  { name: 'Next.js', color: 'bg-gray-600' },
-  { name: 'Node.js', color: 'bg-green-500' },
-  { name: 'Python', color: 'bg-yellow-500' },
+  { name: 'Microservices', color: 'bg-green-500' },
+  { name: 'API Development', color: 'bg-blue-600' },
   { name: 'Docker', color: 'bg-blue-400' },
   { name: 'Git', color: 'bg-orange-500' },
-  { name: 'Figma', color: 'bg-purple-500' },
+  { name: 'Agile/Scrum', color: 'bg-purple-600' },
+  { name: 'MySQL', color: 'bg-blue-700' },
 ];
 
 export default function About() {
@@ -39,23 +39,23 @@ export default function About() {
             <div className="space-y-4 text-sm leading-relaxed">
               <div className="flex gap-2">
                 <span className="text-muted-foreground">-</span>
-                <span>Full-stack developer passionate about creating meaningful digital experiences.</span>
+                <span>Hi, my name's Iman and I'm a software engineer.</span>
               </div>
               <div className="flex gap-2">
                 <span className="text-muted-foreground">-</span>
-                <span>Photography enthusiast capturing moments and stories.</span>
+                <span>Passionate about Startup culture - move fast and fix things.</span>
               </div>
               <div className="flex gap-2">
                 <span className="text-muted-foreground">-</span>
-                <span>Continuous learner exploring new technologies and approaches.</span>
+                <span>Expertise in Software Architecture, Microservices Architecture and API Development.</span>
               </div>
               <div className="flex gap-2">
                 <span className="text-muted-foreground">-</span>
-                <span>Building user-centric applications with modern web technologies.</span>
+                <span>Currently working at Kitabisa.com as Software Engineer since March 2019.</span>
               </div>
               <div className="flex gap-2">
                 <span className="text-muted-foreground">-</span>
-                <span>Believer in clean code, thoughtful design, and continuous improvement.</span>
+                <span>Building web services and APIs used by front-end and mobile developers.</span>
               </div>
             </div>
 
@@ -86,15 +86,15 @@ export default function About() {
                 <div className="space-y-2 text-sm">
                   <div className="flex gap-2">
                     <span className="text-green-500">✓</span>
-                    <span>Building modern web applications</span>
+                    <span>Building microservices architecture at Kitabisa.com</span>
                   </div>
                   <div className="flex gap-2">
                     <span className="text-yellow-500">⚡</span>
-                    <span>Learning new frameworks and tools</span>
+                    <span>Optimizing applications for maximum speed and scalability</span>
                   </div>
                   <div className="flex gap-2">
                     <span className="text-blue-500">📚</span>
-                    <span>Sharing knowledge and experiences</span>
+                    <span>Creating APIs documentation and reusable code libraries</span>
                   </div>
                 </div>
               </div>
@@ -107,7 +107,7 @@ export default function About() {
               </h2>
               <div className="flex flex-wrap gap-3">
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href="https://github.com/gobliggg" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Github className="h-3 w-3" />
                     GitHub
                     <ExternalLink className="h-2 w-2" />
@@ -115,16 +115,16 @@ export default function About() {
                 </Button>
                 
                 <Button asChild variant="outline" size="sm">
-                  <a href="mailto:contact@craft.by" className="flex items-center gap-2">
+                  <a href="mailto:developer.iman@gmail.com" className="flex items-center gap-2">
                     <Mail className="h-3 w-3" />
                     Email
                   </a>
                 </Button>
                 
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                    <Instagram className="h-3 w-3" />
-                    Instagram
+                  <a href="https://www.linkedin.com/in/gobliggg" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <ExternalLink className="h-3 w-3" />
+                    LinkedIn
                     <ExternalLink className="h-2 w-2" />
                   </a>
                 </Button>

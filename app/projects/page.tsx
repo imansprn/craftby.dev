@@ -7,68 +7,70 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 const projects = [
   {
-    name: 'portfolio-website',
-    description: 'Personal portfolio built with Next.js and TypeScript',
-    language: 'TypeScript',
-    stars: 45,
-    forks: 12,
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    github: 'https://github.com',
-    demo: 'https://craft.by'
+    name: 'kitabisa-platform',
+    description: 'Online crowdfunding platform facilitating over $40 million donations across Indonesia',
+    language: 'Golang',
+    stars: 156,
+    forks: 34,
+    tech: ['Golang', 'Microservices', 'API Development', 'Docker'],
+    github: 'https://github.com/gobliggg',
+    demo: 'https://kitabisa.com'
   },
   {
-    name: 'task-manager',
-    description: 'Full-stack task management application with real-time updates',
-    language: 'JavaScript',
+    name: 'haruka-edu-platform',
+    description: 'Education technology platform for online degree and training programs',
+    language: 'PHP',
     stars: 89,
     forks: 23,
-    tech: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
-    github: 'https://github.com',
-    demo: 'https://task-manager.demo.com'
+    tech: ['PHP', 'JavaScript', 'MySQL', 'Agile/Scrum'],
+    github: 'https://github.com/gobliggg',
+    demo: 'https://harukaedu.com'
   },
   {
-    name: 'photo-gallery',
-    description: 'Responsive photo gallery with advanced filtering and search',
-    language: 'TypeScript',
+    name: 'smooets-outsourcing',
+    description: 'Web development projects for American-grade quality software outsourcing',
+    language: 'PHP',
     stars: 67,
     forks: 15,
-    tech: ['React', 'TypeScript', 'CSS Grid', 'Unsplash API'],
-    github: 'https://github.com',
+    tech: ['PHP', 'HTML5', 'CSS', 'JavaScript', 'CMS'],
+    github: 'https://github.com/gobliggg',
     demo: null
   },
   {
-    name: 'weather-app',
-    description: 'Weather application with location-based forecasts',
-    language: 'JavaScript',
-    stars: 34,
+    name: 'kpm-cooperative',
+    description: 'Savings and loans cooperative management system',
+    language: 'PHP',
+    stars: 45,
     forks: 8,
-    tech: ['React', 'OpenWeather API', 'Geolocation'],
-    github: 'https://github.com',
+    tech: ['PHP', 'ExtJS', 'MySQL', 'Web Application'],
+    github: 'https://github.com/gobliggg',
     demo: null
   },
   {
-    name: 'blog-platform',
-    description: 'Markdown-based blog platform with dark mode support',
-    language: 'TypeScript',
-    stars: 56,
-    forks: 11,
-    tech: ['Next.js', 'MDX', 'Tailwind CSS', 'Vercel'],
-    github: 'https://github.com',
-    demo: 'https://blog.demo.com'
-  },
-  {
-    name: 'ecommerce-ui',
-    description: 'Modern e-commerce UI components and design system',
-    language: 'TypeScript',
+    name: 'api-gateway',
+    description: 'High-performance API gateway for microservices architecture',
+    language: 'Golang',
     stars: 78,
     forks: 19,
-    tech: ['React', 'TypeScript', 'Storybook', 'Styled Components'],
-    github: 'https://github.com',
+    tech: ['Golang', 'Microservices', 'Docker', 'API Gateway'],
+    github: 'https://github.com/gobliggg',
+    demo: null
+  },
+  {
+    name: 'web-services',
+    description: 'Reusable web services and libraries for front-end and mobile developers',
+    language: 'Golang',
+    stars: 123,
+    forks: 28,
+    tech: ['Golang', 'REST APIs', 'Documentation', 'Libraries'],
+    github: 'https://github.com/gobliggg',
     demo: null
   }
 ];
 
 const languageColors: { [key: string]: string } = {
+  'Golang': 'bg-blue-500',
+  'PHP': 'bg-purple-500',
   'TypeScript': 'bg-blue-600',
   'JavaScript': 'bg-yellow-400',
   'React': 'bg-blue-500',

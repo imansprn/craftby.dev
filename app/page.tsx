@@ -7,7 +7,7 @@ import { ChevronRight } from 'lucide-react';
 export default function Home() {
   const [displayText, setDisplayText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
-  const fullText = 'Welcome to my personal space where I share projects, thoughts, and experiences.';
+  const fullText = 'Software Engineer passionate about Startup culture, move fast and fix things, with expertise in Software Architecture, Microservices Architecture and API Development.';
 
   useEffect(() => {
     let i = 0;
@@ -32,10 +32,10 @@ export default function Home() {
           <div className="space-y-4">
             <h1 className="text-2xl sm:text-3xl">
               <span className="text-muted-foreground">&gt;</span> Hello, I'm{' '}
-              <span className="text-primary font-semibold">Iman</span>
+              <span className="text-primary font-semibold">Iman Suparman</span>
             </h1>
             <p className="text-muted-foreground text-lg">
-              Developer. Creator. Learner.
+              Software Engineer. Startup Enthusiast. Problem Solver.
             </p>
           </div>
 
@@ -86,9 +86,9 @@ export default function Home() {
               <div>Editor: VS Code</div>
             </div>
             <div className="space-y-1">
-              <div>Languages: JavaScript, TypeScript, Python</div>
-              <div>Frameworks: React, Next.js, Node.js</div>
-              <div>Tools: Git, Docker, Figma</div>
+              <div>Languages: Golang, PHP, JavaScript</div>
+              <div>Expertise: Microservices, API Development</div>
+              <div>Tools: Git, Docker, Agile/Scrum</div>
             </div>
           </div>
         </div>
