@@ -1,0 +1,138 @@
+"use client";
+
+import { useState, useEffect } from 'react';
+import { Github, Mail, Instagram, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+const techStack = [
+  { name: 'JavaScript', color: 'bg-yellow-400' },
+  { name: 'TypeScript', color: 'bg-blue-600' },
+  { name: 'React', color: 'bg-blue-500' },
+  { name: 'Next.js', color: 'bg-gray-600' },
+  { name: 'Node.js', color: 'bg-green-500' },
+  { name: 'Python', color: 'bg-yellow-500' },
+  { name: 'Docker', color: 'bg-blue-400' },
+  { name: 'Git', color: 'bg-orange-500' },
+  { name: 'Figma', color: 'bg-purple-500' },
+];
+
+export default function About() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  return (
+    <div className="min-h-screen pt-14">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-16">
+        <div className={`transition-all duration-500 ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+        }`}>
+          {/* Markdown-style header */}
+          <div className="space-y-8">
+            <h1 className="text-xl">
+              <span className="text-muted-foreground">##</span> About Me
+            </h1>
+
+            {/* Content in markdown-style list */}
+            <div className="space-y-4 text-sm leading-relaxed">
+              <div className="flex gap-2">
+                <span className="text-muted-foreground">-</span>
+                <span>Full-stack developer passionate about creating meaningful digital experiences.</span>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-muted-foreground">-</span>
+                <span>Photography enthusiast capturing moments and stories.</span>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-muted-foreground">-</span>
+                <span>Continuous learner exploring new technologies and approaches.</span>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-muted-foreground">-</span>
+                <span>Building user-centric applications with modern web technologies.</span>
+              </div>
+              <div className="flex gap-2">
+                <span className="text-muted-foreground">-</span>
+                <span>Believer in clean code, thoughtful design, and continuous improvement.</span>
+              </div>
+            </div>
+
+            {/* Tech stack */}
+            <div className="space-y-4">
+              <h2 className="text-lg">
+                <span className="text-muted-foreground">###</span> Tech Stack
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {techStack.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="inline-flex items-center gap-2 px-3 py-1 bg-muted text-xs rounded-md border border-border"
+                  >
+                    <div className={`w-2 h-2 rounded-full ${tech.color}`}></div>
+                    {tech.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Current focus */}
+            <div className="space-y-4">
+              <h2 className="text-lg">
+                <span className="text-muted-foreground">###</span> Current Focus
+              </h2>
+              <div className="bg-muted/30 border border-border rounded-md p-4">
+                <div className="space-y-2 text-sm">
+                  <div className="flex gap-2">
+                    <span className="text-green-500">✓</span>
+                    <span>Building modern web applications</span>
+                  </div>
+                  <div className="flex gap-2">
+                    <span className="text-yellow-500">⚡</span>
+                    <span>Learning new frameworks and tools</span>
+                  </div>
+                  <div className="flex gap-2">
+                    <span className="text-blue-500">📚</span>
+                    <span>Sharing knowledge and experiences</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Links */}
+            <div className="space-y-4">
+              <h2 className="text-lg">
+                <span className="text-muted-foreground">###</span> Links
+              </h2>
+              <div className="flex flex-wrap gap-3">
+                <Button asChild variant="outline" size="sm">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <Github className="h-3 w-3" />
+                    GitHub
+                    <ExternalLink className="h-2 w-2" />
+                  </a>
+                </Button>
+                
+                <Button asChild variant="outline" size="sm">
+                  <a href="mailto:contact@iman.dev" className="flex items-center gap-2">
+                    <Mail className="h-3 w-3" />
+                    Email
+                  </a>
+                </Button>
+                
+                <Button asChild variant="outline" size="sm">
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <Instagram className="h-3 w-3" />
+                    Instagram
+                    <ExternalLink className="h-2 w-2" />
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
