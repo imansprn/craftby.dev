@@ -115,7 +115,7 @@ export default function About() {
                 </Button>
                 
                 <Button asChild variant="outline" size="sm">
-                  <a href="mailto:contact@iman.dev" className="flex items-center gap-2">
+                  <a href="mailto:contact@craft.by" className="flex items-center gap-2">
                     <Mail className="h-3 w-3" />
                     Email
                   </a>

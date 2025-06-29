@@ -14,7 +14,7 @@ const projects = [
     forks: 12,
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     github: 'https://github.com',
-    demo: 'https://iman.dev'
+    demo: 'https://craft.by'
   },
   {
     name: 'task-manager',

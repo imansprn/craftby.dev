@@ -14,7 +14,7 @@ export default function Contact() {
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText('contact@iman.dev');
+      await navigator.clipboard.writeText('contact@craft.by');
       setCopiedEmail(true);
       setTimeout(() => setCopiedEmail(false), 2000);
     } catch (err) {
@@ -42,7 +42,7 @@ export default function Contact() {
               <div className="space-y-3 text-sm font-mono">
                 <div className="flex items-center gap-3">
                   <span className="text-muted-foreground w-16">email:</span>
-                  <span>contact@iman.dev</span>
+                  <span>contact@craft.by</span>
                   <Button
                     variant="ghost"
                     size="icon"
@@ -129,7 +129,7 @@ export default function Contact() {
               <div className="space-y-3">
                 <div className="flex gap-3">
                   <Button asChild variant="outline" size="sm">
-                    <a href="mailto:contact@iman.dev" className="flex items-center gap-2">
+                    <a href="mailto:contact@craft.by" className="flex items-center gap-2">
                       <Mail className="h-3 w-3" />
                       Email (preferred)
                     </a>
