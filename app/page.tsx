@@ -83,12 +83,12 @@ export default function Home() {
             <div className="space-y-1">
               <div>OS: macOS</div>
               <div>Shell: zsh</div>
-              <div>Editor: VS Code</div>
+              <div>Editor: JetBrains</div>
             </div>
             <div className="space-y-1">
               <div>Languages: Golang, PHP, JavaScript, TypeScript, Python</div>
               <div>Frameworks: React, Next.js, Node.js</div>
-              <div>Tools: Git, Docker, Figma</div>
+              <div>Tools: Git, Docker</div>
             </div>
           </div>
         </div>

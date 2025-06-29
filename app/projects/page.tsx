@@ -7,64 +7,52 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 const projects = [
   {
-    name: 'portfolio-website',
-    description: 'Personal portfolio built with Next.js and TypeScript',
-    language: 'TypeScript',
-    stars: 45,
-    forks: 12,
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    github: 'https://github.com',
-    demo: 'https://craft.by'
+    name: 'motjker',
+    description: 'A powerful API mocking service that allows you to create, manage, and monitor mock endpoints for development and testing purposes. Features project management, community library, real-time monitoring, and role-based access control.',
+    language: 'PHP',
+    stars: 0,
+    forks: 0,
+    tech: ['Laravel', 'Livewire', 'Tailwind CSS', 'Spatie Permission', 'SQLite/MySQL/PostgreSQL', 'PHP 8.3+'],
+    demo: 'https://www.motjker.xyz/'
   },
   {
-    name: 'task-manager',
-    description: 'Full-stack task management application with real-time updates',
+    name: 'telegraf',
+    description: 'An automated system that fetches random LeetCode problems, generates blog posts about solving them in Go, and publishes them to either WordPress or Ghost. The service runs continuously and generates posts on a configurable schedule.',
+    language: 'Python',
+    stars: 0,
+    forks: 0,
+    tech: ['Python', 'GraphQL', 'DeepSeek AI', 'WordPress API', 'Ghost API', 'Gunicorn'],
+    github: 'https://github.com/imansprn/telegraf',
+    demo: 'https://leetwithghost.zeabur.app'
+  },
+  {
+    name: 'ipril',
+    description: 'A Telegram bot that helps users improve their writing in multiple languages using AI-powered grammar correction. Supports 6 languages with user preference persistence, rate limiting, and automated daily backups.',
+    language: 'Python',
+    stars: 1,
+    forks: 0,
+    tech: ['Python', 'Telegram Bot API', 'DeepSeek AI', 'Multi-language Support', 'Rate Limiting', 'JSON Storage'],
+    github: 'https://github.com/imansprn/ipril',
+    demo: 'https://t.me/IprilBot'
+  },
+  {
+    name: 'heuh',
+    description: 'A Node.js application that integrates Sentry and GitHub webhooks with Google Chat, allowing you to receive notifications about errors and pull request reviews directly in your Google Chat space.',
     language: 'JavaScript',
-    stars: 89,
-    forks: 23,
-    tech: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
-    github: 'https://github.com',
-    demo: 'https://task-manager.demo.com'
-  },
-  {
-    name: 'photo-gallery',
-    description: 'Responsive photo gallery with advanced filtering and search',
-    language: 'TypeScript',
-    stars: 67,
-    forks: 15,
-    tech: ['React', 'TypeScript', 'CSS Grid', 'Unsplash API'],
-    github: 'https://github.com',
+    stars: 0,
+    forks: 0,
+    tech: ['Node.js', 'Express', 'Google Chat API', 'Sentry Webhooks', 'GitHub Webhooks', 'Docker', 'Swagger'],
+    github: 'https://github.com/imansprn/heuh',
     demo: null
   },
   {
-    name: 'weather-app',
-    description: 'Weather application with location-based forecasts',
-    language: 'JavaScript',
-    stars: 34,
-    forks: 8,
-    tech: ['React', 'OpenWeather API', 'Geolocation'],
-    github: 'https://github.com',
-    demo: null
-  },
-  {
-    name: 'blog-platform',
-    description: 'Markdown-based blog platform with dark mode support',
-    language: 'TypeScript',
-    stars: 56,
-    forks: 11,
-    tech: ['Next.js', 'MDX', 'Tailwind CSS', 'Vercel'],
-    github: 'https://github.com',
-    demo: 'https://blog.demo.com'
-  },
-  {
-    name: 'ecommerce-ui',
-    description: 'Modern e-commerce UI components and design system',
-    language: 'TypeScript',
-    stars: 78,
-    forks: 19,
-    tech: ['React', 'TypeScript', 'Storybook', 'Styled Components'],
-    github: 'https://github.com',
-    demo: null
+    name: 'jeda',
+    description: 'Hari Jeda is your ultimate guide to public holidays in Indonesia. Features holiday tracking, tradition learning, customizable notifications, and offline access for national, religious, and regional holidays.',
+    language: 'Kotlin',
+    stars: 0,
+    forks: 0,
+    tech: ['Kotlin', 'Android', 'Java', 'XML', 'SQLite', 'Notifications', 'Offline Support'],
+    demo: 'https://play.google.com/store/apps/details?id=xyz.gobliggg.calendar'
   }
 ];
 
@@ -78,6 +66,7 @@ const languageColors: { [key: string]: string } = {
   'Python': 'bg-yellow-500',
   'Go': 'bg-blue-500',
   'Rust': 'bg-orange-600',
+  'Kotlin': 'bg-purple-600',
 };
 
 export default function Projects() {

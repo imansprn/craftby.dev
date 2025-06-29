@@ -14,7 +14,7 @@ export default function Contact() {
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText('contact@craft.by');
+      await navigator.clipboard.writeText('developer.iman@gmail.com');
       setCopiedEmail(true);
       setTimeout(() => setCopiedEmail(false), 2000);
     } catch (err) {
@@ -42,7 +42,7 @@ export default function Contact() {
               <div className="space-y-3 text-sm font-mono">
                 <div className="flex items-center gap-3">
                   <span className="text-muted-foreground w-16">email:</span>
-                  <span>contact@craft.by</span>
+                  <span>developer.iman@gmail.com</span>
                   <Button
                     variant="ghost"
                     size="icon"
@@ -60,12 +60,25 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <span className="text-muted-foreground w-16">github:</span>
                   <a 
-                    href="https://github.com"
+                    href="https://github.com/imansprn"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors flex items-center gap-1"
                   >
-                    github.com/iman
+                    github.com/imansprn
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <span className="text-muted-foreground w-16">instagram:</span>
+                  <a 
+                    href="https://www.instagram.com/imansprn"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors flex items-center gap-1"
+                  >
+                    @imansprn
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 </div>
@@ -73,12 +86,12 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <span className="text-muted-foreground w-16">photos:</span>
                   <a 
-                    href="https://instagram.com"
+                    href="https://unsplash.com/@craftby"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors flex items-center gap-1"
                   >
-                    @iman_photos
+                    unsplash.com/@craftby
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 </div>
@@ -86,12 +99,12 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <span className="text-muted-foreground w-16">linkedin:</span>
                   <a 
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/imansprn"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors flex items-center gap-1"
                   >
-                    linkedin.com/in/iman
+                    linkedin.com/in/imansprn
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 </div>
@@ -129,14 +142,14 @@ export default function Contact() {
               <div className="space-y-3">
                 <div className="flex gap-3">
                   <Button asChild variant="outline" size="sm">
-                    <a href="mailto:contact@craft.by" className="flex items-center gap-2">
+                    <a href="mailto:developer.iman@gmail.com" className="flex items-center gap-2">
                       <Mail className="h-3 w-3" />
                       Email (preferred)
                     </a>
                   </Button>
                   
                   <Button asChild variant="outline" size="sm">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <a href="https://github.com/imansprn" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                       <Github className="h-3 w-3" />
                       GitHub
                       <ExternalLink className="h-2 w-2" />

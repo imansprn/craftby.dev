@@ -8,75 +8,91 @@ import Masonry from 'react-masonry-css';
 const photos = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=800&fit=crop",
-    alt: "mountain-sunrise.jpg",
-    caption: "Golden hour in the Rockies"
+    src: "https://images.unsplash.com/photo-1723048363247-b047cedcbf05?w=800&h=600&fit=crop&q=100",
+    alt: "group-outside-building.jpg",
+    caption: "A group of people standing outside of a building",
+    orientation: "landscape",
+    camera: "iPhone 12"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=600&h=900&fit=crop",
-    alt: "urban-shadows.jpg",
-    caption: "City geometry and light"
+    src: "https://images.unsplash.com/photo-1723048349242-efbd41fb6e4d?w=800&h=600&fit=crop&q=100",
+    alt: "city-street-traffic.jpg",
+    caption: "A city street filled with lots of traffic next to tall buildings",
+    orientation: "landscape",
+    camera: "iPhone 12"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=750&fit=crop",
-    alt: "portrait-natural.jpg",
-    caption: "Available light portrait"
+    src: "https://images.unsplash.com/photo-1723048335765-2d721f4a14a1?w=600&h=800&fit=crop&q=100",
+    alt: "group-outside-restaurant.jpg",
+    caption: "A group of people standing outside of a restaurant",
+    orientation: "portrait",
+    camera: "iPhone 12"
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=900&fit=crop",
-    alt: "forest-mist.jpg",
-    caption: "Morning fog through pines"
+    src: "https://images.unsplash.com/photo-1723048324410-350e3324c91f?w=800&h=600&fit=crop&q=100",
+    alt: "boat-in-water.jpg",
+    caption: "A boat that is sitting in the water",
+    orientation: "landscape",
+    camera: "iPhone 12"
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=800&fit=crop",
-    alt: "forest-path.jpg",
-    caption: "Trail through old growth"
+    src: "https://images.unsplash.com/photo-1723048311105-9ccfb21e6782?w=800&h=600&fit=crop&q=100",
+    alt: "gardens-by-bay-night.jpg",
+    caption: "A night view of the gardens by the bay",
+    orientation: "landscape",
+    camera: "iPhone 12"
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=750&fit=crop",
-    alt: "lake-reflection.jpg",
-    caption: "Perfect mirror conditions"
+    src: "https://images.unsplash.com/photo-1723041024940-0f7061409e59?w=600&h=800&fit=crop&q=100",
+    alt: "unsplash-photo-6.jpg",
+    caption: "Urban photography",
+    orientation: "portrait",
+    camera: "iPhone 12"
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600&h=900&fit=crop",
-    alt: "architecture-modern.jpg",
-    caption: "Brutalist concrete forms"
+    src: "https://images.unsplash.com/photo-1721556482132-858440ba423f?w=800&h=600&fit=crop&q=100",
+    alt: "unsplash-photo-7.jpg",
+    caption: "Urban photography",
+    orientation: "landscape",
+    camera: "iPhone 12"
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1502780402662-acc01917aff4?w=600&h=800&fit=crop",
-    alt: "coastal-drama.jpg",
-    caption: "Storm approaching coast"
+    src: "https://images.unsplash.com/photo-1722015740171-88f4134b35de?w=800&h=600&fit=crop&q=100",
+    alt: "lake-aerial-view.jpg",
+    caption: "A view of a lake from a high point of view",
+    orientation: "landscape",
+    camera: "iPhone 12"
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1506102383123-c8ef1e872756?w=600&h=750&fit=crop",
-    alt: "urban-perspective.jpg",
-    caption: "Looking up in downtown"
+    src: "https://images.unsplash.com/photo-1722015754229-2005d09b9ea6?w=600&h=800&fit=crop&q=100",
+    alt: "beach-scenery.jpg",
+    caption: "Beach scenery with sea view",
+    orientation: "portrait",
+    camera: "iPhone 12"
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&h=900&fit=crop",
-    alt: "desert-minimal.jpg",
-    caption: "Minimalist desert landscape"
+    src: "https://images.unsplash.com/photo-1722015717244-1726ab6a9fc5?w=800&h=600&fit=crop&q=100",
+    alt: "lake-aerial-view-2.jpg",
+    caption: "Lake aerial view",
+    orientation: "landscape",
+    camera: "iPhone 12"
   },
   {
     id: 11,
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=700&fit=crop",
-    alt: "street-candid.jpg",
-    caption: "Candid street moment"
-  },
-  {
-    id: 12,
-    src: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&h=850&fit=crop",
-    alt: "nature-macro.jpg",
-    caption: "Macro detail study"
+    src: "https://images.unsplash.com/photo-1722015727437-4044ac4ec547?w=600&h=800&fit=crop&q=100",
+    alt: "beach-scenery-2.jpg",
+    caption: "Beach scenery",
+    orientation: "portrait",
+    camera: "iPhone 12"
   }
 ];
 
@@ -147,20 +163,27 @@ export default function Photos() {
               {photos.map((photo) => (
                 <div
                   key={photo.id}
-                  className="group cursor-pointer overflow-hidden rounded-md bg-muted hover:shadow-lg transition-all duration-200"
+                  className={`group cursor-pointer overflow-hidden rounded-md bg-muted hover:shadow-lg transition-all duration-200 ${
+                    photo.orientation === 'landscape' ? 'col-span-2' : ''
+                  }`}
                   onClick={() => openLightbox(photo.id)}
                 >
                   <div className="relative">
                     <img
                       src={photo.src}
                       alt={photo.alt}
-                      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                      className={`w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300 ${
+                        photo.orientation === 'portrait' ? 'aspect-[3/4]' : 'aspect-[4/3]'
+                      }`}
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-end">
                       <div className="p-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="flex items-center gap-2 text-xs font-mono">
                           <Camera className="h-3 w-3" />
                           {photo.alt}
+                        </div>
+                        <div className="text-xs text-white/80 mt-1">
+                          {photo.orientation === 'portrait' ? 'Portrait' : 'Landscape'} • {photo.camera}
                         </div>
                       </div>
                     </div>
@@ -178,7 +201,7 @@ export default function Photos() {
                 </div>
                 <div>
                   <div className="text-muted-foreground">Camera</div>
-                  <div className="font-mono">Canon 5D IV</div>
+                  <div className="font-mono">Ricoh GR III</div>
                 </div>
                 <div>
                   <div className="text-muted-foreground">Film stock</div>
