@@ -7,7 +7,7 @@ import { ChevronRight } from 'lucide-react';
 export default function Home() {
   const [displayText, setDisplayText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
-  const fullText = 'Software Engineer passionate about Startup culture, move fast and fix things, with expertise in Software Architecture, Microservices Architecture and API Development.';
+  const fullText = 'Hey there! I\'m a software engineer who loves building stuff and breaking things (in a good way).';
 
   useEffect(() => {
     let i = 0;
@@ -31,11 +31,11 @@ export default function Home() {
           {/* Header */}
           <div className="space-y-4">
             <h1 className="text-2xl sm:text-3xl">
-              <span className="text-muted-foreground">&gt;</span> Hello, I'm{' '}
-              <span className="text-primary font-semibold">Iman Suparman</span>
+              <span className="text-muted-foreground">&gt;</span> Yo, I'm{' '}
+              <span className="text-primary font-semibold">Iman</span>
             </h1>
             <p className="text-muted-foreground text-lg">
-              Software Engineer. Startup Enthusiast. Problem Solver.
+              Code crafter. Problem solver. Coffee addict. 🚀
             </p>
           </div>
 
@@ -87,8 +87,8 @@ export default function Home() {
             </div>
             <div className="space-y-1">
               <div>Languages: Golang, PHP, JavaScript</div>
-              <div>Expertise: Microservices, API Development</div>
-              <div>Tools: Git, Docker, Agile/Scrum</div>
+              <div>Mood: Caffeinated ☕</div>
+              <div>Status: Building cool stuff</div>
             </div>
           </div>
         </div>

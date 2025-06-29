@@ -39,30 +39,30 @@ export default function About() {
             <div className="space-y-4 text-sm leading-relaxed">
               <div className="flex gap-2">
                 <span className="text-muted-foreground">-</span>
-                <span>Hi, my name's Iman and I'm a software engineer.</span>
+                <span>Hey, I'm Iman! A software engineer who loves turning coffee into code ☕</span>
               </div>
               <div className="flex gap-2">
                 <span className="text-muted-foreground">-</span>
-                <span>Passionate about Startup culture - move fast and fix things.</span>
+                <span>Passionate about startup culture - move fast, break things, fix them later 🚀</span>
               </div>
               <div className="flex gap-2">
                 <span className="text-muted-foreground">-</span>
-                <span>Expertise in Software Architecture, Microservices Architecture and API Development.</span>
+                <span>Building microservices and APIs that actually work (most of the time) 😅</span>
               </div>
               <div className="flex gap-2">
                 <span className="text-muted-foreground">-</span>
-                <span>Currently working at Kitabisa.com as Software Engineer since March 2019.</span>
+                <span>Currently crafting code at Kitabisa.com since March 2019</span>
               </div>
               <div className="flex gap-2">
                 <span className="text-muted-foreground">-</span>
-                <span>Building web services and APIs used by front-end and mobile developers.</span>
+                <span>When I'm not coding, you'll find me gaming, taking photos, or climbing mountains 🏔️</span>
               </div>
             </div>
 
             {/* Tech stack */}
             <div className="space-y-4">
               <h2 className="text-lg">
-                <span className="text-muted-foreground">###</span> Tech Stack
+                <span className="text-muted-foreground">###</span> My Arsenal
               </h2>
               <div className="flex flex-wrap gap-2">
                 {techStack.map((tech, index) => (
@@ -80,21 +80,21 @@ export default function About() {
             {/* Current focus */}
             <div className="space-y-4">
               <h2 className="text-lg">
-                <span className="text-muted-foreground">###</span> Current Focus
+                <span className="text-muted-foreground">###</span> What I'm Up To
               </h2>
               <div className="bg-muted/30 border border-border rounded-md p-4">
                 <div className="space-y-2 text-sm">
                   <div className="flex gap-2">
                     <span className="text-green-500">✓</span>
-                    <span>Building microservices architecture at Kitabisa.com</span>
+                    <span>Building microservices that don't break (hopefully) at Kitabisa.com</span>
                   </div>
                   <div className="flex gap-2">
                     <span className="text-yellow-500">⚡</span>
-                    <span>Optimizing applications for maximum speed and scalability</span>
+                    <span>Making APIs that frontend devs actually want to use</span>
                   </div>
                   <div className="flex gap-2">
                     <span className="text-blue-500">📚</span>
-                    <span>Creating APIs documentation and reusable code libraries</span>
+                    <span>Writing docs that people actually read (fingers crossed)</span>
                   </div>
                 </div>
               </div>

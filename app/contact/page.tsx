@@ -101,21 +101,21 @@ export default function Contact() {
             {/* Status */}
             <div className="space-y-4">
               <h2 className="text-lg">
-                <span className="text-muted-foreground">##</span> Status
+                <span className="text-muted-foreground">##</span> Current Status
               </h2>
               <div className="bg-muted/30 border border-border rounded-md p-4">
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                    <span>Available for interesting projects</span>
+                    <span>Available for interesting projects (and coffee chats ☕)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
-                    <span>Response time: Usually within 24h</span>
+                    <span>Response time: Usually within 24h (unless I'm gaming 🎮)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                    <span>Timezone: EST (UTC-5)</span>
+                    <span>Timezone: WIB (UTC+7) - Indonesian time 🇮🇩</span>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function Contact() {
             {/* Preferred contact */}
             <div className="space-y-4">
               <h2 className="text-lg">
-                <span className="text-muted-foreground">##</span> Preferred Contact
+                <span className="text-muted-foreground">##</span> Hit Me Up
               </h2>
               <div className="space-y-3">
                 <div className="flex gap-3">
@@ -145,7 +145,8 @@ export default function Contact() {
                 </div>
                 
                 <p className="text-xs text-muted-foreground">
-                  For quick questions, GitHub issues work well. For everything else, email is best.
+                  For quick questions, GitHub issues work well. For everything else, email is best. 
+                  Bonus points if you mention coffee or gaming! ☕🎮
                 </p>
               </div>
             </div>
@@ -153,8 +154,8 @@ export default function Contact() {
             {/* Footer note */}
             <div className="border-t border-border pt-6">
               <p className="text-xs text-muted-foreground">
-                <span className="text-muted-foreground">#</span> Always interested in discussing web development, 
-                design, or photography over coffee (virtual or otherwise).
+                <span className="text-muted-foreground">#</span> Always down to chat about coding, gaming, photography, 
+                or mountain climbing. Virtual coffee is always welcome! ☕
               </p>
             </div>
           </div>

@@ -101,7 +101,7 @@ export default function Projects() {
                 <span className="text-muted-foreground">ls ~/projects</span>
               </div>
               <div className="text-xs text-muted-foreground pl-4">
-                Found {projects.length} repositories
+                Found {projects.length} repositories (some actually work! 😅)
               </div>
             </div>
 
@@ -193,7 +193,7 @@ export default function Projects() {
                 </div>
                 <div>
                   <div className="text-muted-foreground">Last updated</div>
-                  <div className="font-mono">2 days ago</div>
+                  <div className="font-mono">Just now (probably) 🚀</div>
                 </div>
               </div>
             </div>
