@@ -14,7 +14,7 @@ const projects = [
     forks: 12,
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     github: 'https://github.com',
-    demo: 'https://iman.dev'
+    demo: 'https://craft.by'
   },
   {
     name: 'task-manager',
@@ -69,6 +69,8 @@ const projects = [
 ];
 
 const languageColors: { [key: string]: string } = {
+  'Golang': 'bg-blue-500',
+  'PHP': 'bg-purple-500',
   'TypeScript': 'bg-blue-600',
   'JavaScript': 'bg-yellow-400',
   'React': 'bg-blue-500',

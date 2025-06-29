@@ -5,6 +5,8 @@ import { Github, Mail, Instagram, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const techStack = [
+  { name: 'Golang', color: 'bg-blue-500' },
+  { name: 'PHP', color: 'bg-purple-500' },
   { name: 'JavaScript', color: 'bg-yellow-400' },
   { name: 'TypeScript', color: 'bg-blue-600' },
   { name: 'React', color: 'bg-blue-500' },
@@ -13,7 +15,7 @@ const techStack = [
   { name: 'Python', color: 'bg-yellow-500' },
   { name: 'Docker', color: 'bg-blue-400' },
   { name: 'Git', color: 'bg-orange-500' },
-  { name: 'Figma', color: 'bg-purple-500' },
+  { name: 'MySQL', color: 'bg-blue-700' },
 ];
 
 export default function About() {
@@ -115,7 +117,7 @@ export default function About() {
                 </Button>
                 
                 <Button asChild variant="outline" size="sm">
-                  <a href="mailto:contact@iman.dev" className="flex items-center gap-2">
+                  <a href="mailto:contact@craft.by" className="flex items-center gap-2">
                     <Mail className="h-3 w-3" />
                     Email
                   </a>

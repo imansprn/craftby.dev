@@ -7,7 +7,7 @@ import { Navigation } from '@/components/navigation';
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Iman.dev - Personal Portfolio',
+  title: 'Craft.by Iman - Personal Portfolio',
   description: 'Personal portfolio and blog showcasing projects, thoughts, and experiences.',
 };
 

@@ -86,7 +86,7 @@ export default function Home() {
               <div>Editor: VS Code</div>
             </div>
             <div className="space-y-1">
-              <div>Languages: JavaScript, TypeScript, Python</div>
+              <div>Languages: Golang, PHP, JavaScript, TypeScript, Python</div>
               <div>Frameworks: React, Next.js, Node.js</div>
               <div>Tools: Git, Docker, Figma</div>
             </div>

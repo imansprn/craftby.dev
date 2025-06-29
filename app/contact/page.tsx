@@ -14,7 +14,7 @@ export default function Contact() {
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText('contact@iman.dev');
+      await navigator.clipboard.writeText('contact@craft.by');
       setCopiedEmail(true);
       setTimeout(() => setCopiedEmail(false), 2000);
     } catch (err) {
@@ -42,7 +42,7 @@ export default function Contact() {
               <div className="space-y-3 text-sm font-mono">
                 <div className="flex items-center gap-3">
                   <span className="text-muted-foreground w-16">email:</span>
-                  <span>contact@iman.dev</span>
+                  <span>contact@craft.by</span>
                   <Button
                     variant="ghost"
                     size="icon"
@@ -60,7 +60,7 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <span className="text-muted-foreground w-16">github:</span>
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors flex items-center gap-1"
@@ -73,7 +73,7 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <span className="text-muted-foreground w-16">photos:</span>
                   <a 
-                    href="https://instagram.com" 
+                    href="https://instagram.com"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors flex items-center gap-1"
@@ -86,7 +86,7 @@ export default function Contact() {
                 <div className="flex items-center gap-3">
                   <span className="text-muted-foreground w-16">linkedin:</span>
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://linkedin.com"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors flex items-center gap-1"
@@ -115,7 +115,7 @@ export default function Contact() {
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                    <span>Timezone: EST (UTC-5)</span>
+                    <span>Timezone: WIB (UTC+7)</span>
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ export default function Contact() {
               <div className="space-y-3">
                 <div className="flex gap-3">
                   <Button asChild variant="outline" size="sm">
-                    <a href="mailto:contact@iman.dev" className="flex items-center gap-2">
+                    <a href="mailto:contact@craft.by" className="flex items-center gap-2">
                       <Mail className="h-3 w-3" />
                       Email (preferred)
                     </a>
@@ -153,7 +153,7 @@ export default function Contact() {
             {/* Footer note */}
             <div className="border-t border-border pt-6">
               <p className="text-xs text-muted-foreground">
-                <span className="text-muted-foreground">#</span> Always interested in discussing web development, 
+                <span className="text-muted-foreground">#</span> Always interested in discussing web development,
                 design, or photography over coffee (virtual or otherwise).
               </p>
             </div>
