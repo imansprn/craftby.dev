@@ -87,7 +87,7 @@ export default function Home() {
             </div>
             <div className="space-y-1">
               <div>Languages: Golang, PHP, JavaScript, TypeScript, Python</div>
-              <div>Frameworks: React, Next.js, Node.js</div>
+              <div>Frameworks: Laravel, Ruby on Rails, Express.js, Gin</div>
               <div>Tools: Git, Docker</div>
             </div>
           </div>

@@ -109,7 +109,7 @@ export default function About() {
               </h2>
               <div className="flex flex-wrap gap-3">
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href="https://github.com/imansprn" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Github className="h-3 w-3" />
                     GitHub
                     <ExternalLink className="h-2 w-2" />
@@ -117,14 +117,14 @@ export default function About() {
                 </Button>
                 
                 <Button asChild variant="outline" size="sm">
-                  <a href="mailto:contact@craft.by" className="flex items-center gap-2">
+                  <a href="mailto:iman@craftedby.dev" className="flex items-center gap-2">
                     <Mail className="h-3 w-3" />
                     Email
                   </a>
                 </Button>
                 
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href="https://instagram.com/imansprn" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Instagram className="h-3 w-3" />
                     Instagram
                     <ExternalLink className="h-2 w-2" />
