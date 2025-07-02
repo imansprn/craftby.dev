@@ -91,7 +91,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors flex items-center gap-1"
                   >
-                    unsplash.com/@craftby
+                    unsplash.com/@imansprn
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 </div>
