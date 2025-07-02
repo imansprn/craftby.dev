@@ -23,7 +23,7 @@ const projects = [
     forks: 0,
     tech: ['Python', 'GraphQL', 'DeepSeek AI', 'WordPress API', 'Ghost API', 'Gunicorn'],
     github: 'https://github.com/imansprn/telegraf',
-    demo: 'https://leetwithghost.zeabur.app'
+    demo: 'https://ghost.craftedby.dev'
   },
   {
     name: 'ipril',
