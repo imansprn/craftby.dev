@@ -2,6 +2,10 @@
 
 A modern, responsive personal portfolio website built with Next.js 13, TypeScript, and Tailwind CSS. Features a terminal-inspired design with dark/light theme support and showcases projects, photography, and professional information.
 
+## ⚡ Built with [Bolt.new](https://bolt.new/) & [Cursor AI](https://cursor.sh/)
+
+This project was created using [Bolt.new](https://bolt.new/) - an AI-powered platform for building stunning apps & websites by chatting with AI, and developed with [Cursor AI](https://cursor.sh/) - the AI-first code editor.
+
 ## 🚀 Features
 
 - **Modern Tech Stack**: Built with Next.js 13, TypeScript, and Tailwind CSS

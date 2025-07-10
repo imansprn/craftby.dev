@@ -9,151 +9,168 @@ import moment from 'moment';
 const photos = [
     {
         id: 1,
-        src: "https://images.unsplash.com/photo-1751564585913-8d48cc65051a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHwxfHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2400&h=3200",
+        src: "https://images.unsplash.com/photo-1752052176345-ec6209bd7cea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=100&w=2000&h=2667",
+        alt: "daruma-dolls-lush-green-moss.jpg",
+        caption: "Daruma dolls nestled in lush green moss",
+        orientation: "portrait",
+        camera: "Ricoh GR III"
+    },
+    {
+        id: 2,
+        src: "https://images.unsplash.com/photo-1751715953978-9b875928aef3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MnwzTk1kM1lkTlcxRXx8ZW58MHx8fHx8&ixlib=rb-4.1.0&q=100&w=3000",
+        alt: "person-walking-sunlit-sidewalk-brickwork.jpg",
+        caption: "On the go. A person walks purposefully down a sunlit sidewalk, their journey framed by classic brickwork",
+        orientation: "landscape",
+        camera: "Ricoh GR III"
+    },
+
+    {
+        id: 3,
+        src: "https://images.unsplash.com/photo-1751564585913-8d48cc65051a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHwxfHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2000&h=2667",
         alt: "yellow-flower-bud-field.jpg",
         caption: "A delicate yellow flower bud, partially unfurled, stands prominently in the foreground, surrounded by a field of vibrant yellow blooms. The soft focus of the background reveals a hazy river or body of water with a bridge stretching across it under a muted sky, hinting at a serene natural landscape with distant urban elements",
         orientation: "portrait",
         camera: "Ricoh GR III"
     },
     {
-        id: 2,
-        src: "https://images.unsplash.com/photo-1751562249295-2e2fe7c664e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHwyfHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=3840",
+        id: 4,
+        src: "https://images.unsplash.com/photo-1751562249295-2e2fe7c664e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHwyfHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=3000",
         alt: "night-construction-site-cityscape.jpg",
         caption: "A night construction site illuminated by strong work lights, with cranes and excavators operating. In the background stands a brightly lit modern city skyline with high-rise office towers reflecting off the river, likely an urban redevelopment scene in Asia",
         orientation: "landscape",
         camera: "Ricoh GR III"
     },
     {
-        id: 3,
-        src: "https://images.unsplash.com/photo-1751562247125-b0b0b98569b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHwzfHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2400&h=3200",
+        id: 5,
+        src: "https://images.unsplash.com/photo-1751562247125-b0b0b98569b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHwzfHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2000&h=2667",
         alt: "wooden-boat-lotus-pond-woman.jpg",
         caption: "A wooden boat is moored near a lotus pond under large overhanging branches. A woman in a light dress walks along a narrow wooden bridge across the water, with dense trees and scattered rowboats visible in the distance.",
         orientation: "portrait",
         camera: "Ricoh GR III"
     },
     {
-        id: 4,
-        src: "https://images.unsplash.com/photo-1751562170288-3573feb88194?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHw0fHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2400&h=3200",
+        id: 6,
+        src: "https://images.unsplash.com/photo-1751562170288-3573feb88194?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHw0fHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2000&h=2667",
         alt: "torii-gate-forest-sacred-pathway.jpg",
         caption: "A weathered wooden torii gate stands majestically amidst a lush, verdant forest, its traditional design and golden crests hinting at a sacred pathway. The dappled sunlight filtering through the dense canopy creates a serene and timeless atmosphere, inviting contemplation and a sense of natural tranquility",
         orientation: "portrait",
         camera: "Ricoh GR III"
     },
     {
-        id: 5,
-        src: "https://images.unsplash.com/photo-1751562247503-d5b1ffda42fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHw1fHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2400&h=3200",
+        id: 7,
+        src: "https://images.unsplash.com/photo-1751562247503-d5b1ffda42fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHw1fHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2000&h=2667",
         alt: "rowboats-river-lime-hills.jpg",
         caption: "Several rowboats with orange life jackets are docked beside a calm river under tree shade. Boat rowers wearing conical hats wait for passengers. Lush green limestone hills rise in the background under a clear blue sky, evoking a peaceful rural riverside scene in Southeast Asia",
         orientation: "portrait",
         camera: "Ricoh GR III"
     },
     {
-        id: 6,
-        src: "https://images.unsplash.com/photo-1751562247154-824c038e615b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHw2fHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=3840",
+        id: 8,
+        src: "https://images.unsplash.com/photo-1751562247154-824c038e615b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHw2fHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=3000",
         alt: "red-taxi-pedestrian-crossing-japan.jpg",
         caption: "A red taxi drives across a wide striped pedestrian crossing in a modern city intersection. Mid-rise residential and office buildings surround the street, with small green trees lining the sidewalks, typical of urban Japan",
         orientation: "landscape",
         camera: "Ricoh GR III"
     },
     {
-        id: 7,
-        src: "https://images.unsplash.com/photo-1751562170236-e594b314979f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHw3fHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2400&h=3200",
+        id: 9,
+        src: "https://images.unsplash.com/photo-1751562170236-e594b314979f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHw3fHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2000&h=2667",
         alt: "kyoto-street-scene-japanese-flag.jpg",
         caption: "A bustling street scene in Kyoto, Japan, captures the vibrant energy of the city under an overcast sky. A prominent Japanese flag waves proudly, overlooking traditional tiled rooftops and a lively crowd of people exploring the charming shops and historic architecture. Distant mountains frame the urban landscape, adding to the picturesque view",
         orientation: "portrait",
         camera: "Ricoh GR III"
     },
     {
-        id: 8,
-        src: "https://images.unsplash.com/photo-1751562247639-f2b755ccaef5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHw4fHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2400&h=3200",
+        id: 10,
+        src: "https://images.unsplash.com/photo-1751562247639-f2b755ccaef5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzI4MTR8MHwxfGFsbHw4fHx8fHx8Mnx8MTc1MTU2NjIwNXw&ixlib=rb-4.1.0&q=100&w=2000&h=2667",
         alt: "traditional-temple-courtyard-mountains.jpg",
         caption: "A traditional wooden temple with ornate roof carvings and a stone incense burner stands among trees. The courtyard is quiet, framed by trimmed plants and mountain cliffs behind, representing serene temple architecture typical of East or Southeast Asia",
         orientation: "portrait",
         camera: "Ricoh GR III"
     },
     {
-        id: 9,
-        src: "https://images.unsplash.com/photo-1723048363247-b047cedcbf05?w=3200&h=2400&fit=crop&q=100",
+        id: 11,
+        src: "https://images.unsplash.com/photo-1723048363247-b047cedcbf05?w=2400&h=1800&fit=crop&q=100",
         alt: "group-outside-building.jpg",
         caption: "A group of people standing outside of a building",
         orientation: "landscape",
         camera: "iPhone 12"
     },
     {
-        id: 10,
-        src: "https://images.unsplash.com/photo-1723048349242-efbd41fb6e4d?w=2400&h=3200&fit=crop&q=100",
+        id: 12,
+        src: "https://images.unsplash.com/photo-1723048349242-efbd41fb6e4d?w=2000&h=2667&fit=crop&q=100",
         alt: "city-street-traffic.jpg",
         caption: "A city street filled with lots of traffic next to tall buildings",
         orientation: "portrait",
         camera: "iPhone 12"
     },
     {
-        id: 11,
-        src: "https://images.unsplash.com/photo-1723048335765-2d721f4a14a1?w=2400&h=3200&fit=crop&q=100",
+        id: 13,
+        src: "https://images.unsplash.com/photo-1723048335765-2d721f4a14a1?w=2000&h=2667&fit=crop&q=100",
         alt: "group-outside-restaurant.jpg",
         caption: "A group of people standing outside of a restaurant",
         orientation: "portrait",
         camera: "iPhone 12"
     },
     {
-        id: 12,
-        src: "https://images.unsplash.com/photo-1723048324410-350e3324c91f?w=3200&h=2400&fit=crop&q=100",
+        id: 14,
+        src: "https://images.unsplash.com/photo-1723048324410-350e3324c91f?w=2400&h=1800&fit=crop&q=100",
         alt: "boat-in-water.jpg",
         caption: "A boat that is sitting in the water",
         orientation: "landscape",
         camera: "iPhone 12"
     },
     {
-        id: 13,
-        src: "https://images.unsplash.com/photo-1723048311105-9ccfb21e6782?w=2400&h=3200&fit=crop&q=100",
+        id: 15,
+        src: "https://images.unsplash.com/photo-1723048311105-9ccfb21e6782?w=2000&h=2667&fit=crop&q=100",
         alt: "gardens-by-bay-night.jpg",
         caption: "A night view of the gardens by the bay",
         orientation: "portrait",
         camera: "iPhone 12"
     },
     {
-        id: 14,
-        src: "https://images.unsplash.com/photo-1723041024940-0f7061409e59?w=3200&h=2400&fit=crop&q=100",
+        id: 16,
+        src: "https://images.unsplash.com/photo-1723041024940-0f7061409e59?w=2400&h=1800&fit=crop&q=100",
         alt: "urban-photography.jpg",
         caption: "Urban photography",
         orientation: "landscape",
         camera: "iPhone 12"
     },
     {
-        id: 15,
-        src: "https://images.unsplash.com/photo-1721556482132-858440ba423f?w=2400&h=3200&fit=crop&q=100",
+        id: 17,
+        src: "https://images.unsplash.com/photo-1721556482132-858440ba423f?w=2000&h=2667&fit=crop&q=100",
         alt: "urban-photography-2.jpg",
         caption: "Urban photography",
         orientation: "portrait",
         camera: "iPhone 12"
     },
     {
-        id: 16,
-        src: "https://images.unsplash.com/photo-1722015740171-88f4134b35de?w=2400&h=3200&fit=crop&q=100",
+        id: 18,
+        src: "https://images.unsplash.com/photo-1722015740171-88f4134b35de?w=2000&h=2667&fit=crop&q=100",
         alt: "lake-aerial-view.jpg",
         caption: "A view of a lake from a high point of view",
         orientation: "portrait",
         camera: "iPhone 12"
     },
     {
-        id: 17,
-        src: "https://images.unsplash.com/photo-1722015754229-2005d09b9ea6?w=2400&h=3200&fit=crop&q=100",
+        id: 19,
+        src: "https://images.unsplash.com/photo-1722015754229-2005d09b9ea6?w=2000&h=2667&fit=crop&q=100",
         alt: "beach-scenery.jpg",
         caption: "Beach scenery with sea view",
         orientation: "portrait",
         camera: "iPhone 12"
     },
     {
-        id: 18,
-        src: "https://images.unsplash.com/photo-1722015717244-1726ab6a9fc5?w=3200&h=2400&fit=crop&q=100",
+        id: 20,
+        src: "https://images.unsplash.com/photo-1722015717244-1726ab6a9fc5?w=2400&h=1800&fit=crop&q=100",
         alt: "lake-aerial-view-2.jpg",
         caption: "Lake aerial view",
         orientation: "landscape",
         camera: "iPhone 12"
     },
     {
-        id: 19,
-        src: "https://images.unsplash.com/photo-1722015727437-4044ac4ec547?w=2400&h=3200&fit=crop&q=100",
+        id: 21,
+        src: "https://images.unsplash.com/photo-1722015727437-4044ac4ec547?w=2000&h=2667&fit=crop&q=100",
         alt: "beach-scenery-2.jpg",
         caption: "Beach scenery",
         orientation: "portrait",
@@ -277,7 +294,7 @@ export default function Photos() {
                                 </div>
                                 <div>
                                     <div className="text-muted-foreground">Last update</div>
-                                    <div className="font-mono">{moment('2025-07-04T01:50:00').fromNow()}</div>
+                                    <div className="font-mono">{moment('2025-07-10T01:50:00').fromNow()}</div>
                                 </div>
                             </div>
                         </div>

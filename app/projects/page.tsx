@@ -12,7 +12,7 @@ const projects = [
     language: 'PHP',
     stars: 0,
     forks: 0,
-    tech: ['Laravel', 'Livewire', 'Tailwind CSS', 'Spatie Permission', 'SQLite/MySQL/PostgreSQL', 'PHP 8.3+'],
+    tech: ['Laravel', 'Livewire', 'Tailwind CSS', 'Spatie Permission', 'MySQL', 'PHP 8.3+'],
     demo: 'https://www.motjker.xyz/'
   },
   {
